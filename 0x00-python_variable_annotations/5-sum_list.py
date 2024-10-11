@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 module that houses a function that list
 and return the sum ofelements in the
