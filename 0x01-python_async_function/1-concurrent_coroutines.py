@@ -5,7 +5,6 @@ returns a list of all the delays
 (float values)
 """
 
-
 import asyncio
 import heapq
 from typing import List
