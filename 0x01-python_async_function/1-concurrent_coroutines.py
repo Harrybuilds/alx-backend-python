@@ -16,6 +16,10 @@ wait_random = basic_async_syntax.wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
+    """
+    function that returns a list of all
+    the delays (float values)
+    """
     delays = []
     # Use a min-heap to store delays
     heap = []

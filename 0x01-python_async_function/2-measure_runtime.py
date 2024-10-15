@@ -18,7 +18,14 @@ def measure_time(n: int, max_delay: int) -> float:
     """
     Measures the total execution time
     for wait_n(n, max_delay),
-    and returns total_time / n.
+    and returns total_time
+
+    args:
+        n (an integer): an integer value
+        max_delay (an integer): max delay
+
+    return:
+          total_time / n
     """
 
     start_time = time.time()  # Record start time
