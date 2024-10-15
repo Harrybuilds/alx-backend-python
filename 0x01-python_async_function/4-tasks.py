@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """
+module that houses an asynchronous python
+function that spawns task_wait_random n times
+and returns a list of completed delay
+in ascending order
 """
 
 
 import asyncio
 from typing import List
-from 3_tasks import task_wait_random
+import importlib
+
+
+tasks = importlib.import_module('3-tasks')
+task_wait_random = tasks.task_wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:

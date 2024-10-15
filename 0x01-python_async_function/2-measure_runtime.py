@@ -7,7 +7,11 @@ the time taken to execute wait_n
 
 import time
 import asyncio
-from 1_concurrent_coroutines import wait_n
+import importlib
+
+
+concurrent_coroutines = importlib.import_module('1-concurrent_coroutines')
+wait_n = concurrent_coroutines.wait_n
 
 
 def measure_time(n: int, max_delay: int) -> float:

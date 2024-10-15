@@ -8,7 +8,11 @@ returns a list of all the delays
 import asyncio
 import heapq
 from typing import List
-from 0-basic_async_syntax import wait_random
+import importlib
+
+
+basic_async_syntax = importlib.import_module('0-basic_async_syntax')
+wait_random = basic_async_syntax.wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
